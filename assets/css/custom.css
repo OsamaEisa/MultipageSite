@@ -1,0 +1,558 @@
+/*
+Green: #79b044
+Salmon: #dd5638
+Blue Gray: #3e4249
+*/
+
+/**** General ****/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+/**** Global ****/
+
+h1,h2,h3,h4,h5,h6 {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3em
+}
+h1,h2 {
+    margin: 0 0 40px;
+}
+h3 {
+    margin: 20px 0;
+}
+h4 {
+    font-size: 18px;
+}
+button, input, .btn, a.btn {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #fff;
+} 
+
+.btn {
+    font-weight: bold;
+}
+button.btn:focus {
+    outline: none !important;
+}
+.btn-danger {
+    background-color: #dd5638;
+    border-color: #d95131;
+}
+.btn-success {
+    background-color: #79b044;
+    border: none;
+}
+.btn-success:hover {
+    background-color: #6a9b3d;
+    border-color: #6a9b3d;
+}
+img {
+    max-width: 100%
+}
+a:link, a:visited {
+    color: #dd5638;
+}
+a:hover {
+    text-decoration: none;
+    color: #c9302c;
+}
+p.lead {
+    font-weight: normal;
+}
+p {
+    margin: 0 0 15px;
+}
+
+/**** Hero Section ****/
+#hero {
+    background: url('https://picsum.photos/1200/500?image=826') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 500px;
+    padding: 40px 0;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+#hero article {
+    width: 100%;
+    text-align: center;
+}
+
+#hero .hero-text {
+    margin-top: 30px;
+}
+#price-timeline {
+    margin: 30px 0 60px;
+    text-align: center
+}
+#price-timeline .price {
+    display: inline-block;
+    margin: 0 2% 0 0;
+    width: 30%;
+    background-color: #3e4249;
+    padding: 10px 20px 30px;
+    position: relative;
+    vertical-align: top; 
+}
+#price-timeline .price.active {
+    background-color: #dd5638
+}
+#price-timeline .price span {
+    background-color: #101010;
+    display: block;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 70px; /* to be centered, make it the height of the box */
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 100%; /* to become circle */
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    position: absolute;
+    bottom: -35px; /* half of the height, to be centered */
+    left: 50%; /* to continue center it */
+    margin-left: -35px;  /* and then margin left with - (half of the width) */
+}
+#price-timeline h4 {
+    margin: 0 0 10px;
+}
+#price-timeline h4 small {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+}
+#hero a {
+    color: #FFF;
+}
+
+/**** Layout ****/
+.row + .row {
+    margin-top: 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+.section-header {
+    text-align: center
+}
+section h2 {
+    margin: 20px 0 40px;
+}
+section h3 {
+    margin: 30px 0 10px;
+}
+
+/*** optin ***/
+#optin {
+    background-color: #3e4249;
+    padding: 20px 0;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: 1.2em
+}
+#optin p {
+    margin: 7px 0 0 0;
+}
+/**** Boost Income ****/
+
+/*** Who Benefits ***/
+#who-benefits {
+    background-color: #fff
+}
+/*** Course features ***/
+#course-features {
+    background-color: #3e4249;
+    color: #fff;
+    text-align: center;
+}
+#course-features h4 {
+    margin: 25px 0 0 0;
+}
+
+/** project-feature **/
+#project-features {
+    text-align: center;
+}
+
+/** featurette **/
+#featurette {
+    background: url(../img/watch-video.jpg) repeat center center fixed;
+    min-height: 500px;
+    background-size: cover;
+    text-align: center;
+    color: #FFF;
+}
+
+/** instructor **/
+#instructor {
+    background: #FFF url(../img/presentation.png) 80% 15% no-repeat;
+}
+#instructor h2 {
+    margin: 0 0 30px;
+}
+#instructor .num {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFF;
+    height: 140px;
+    width: 140px;
+    text-align: center;
+    line-height: 27px; 
+    background: #dd5638;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    display: table;
+}
+#instructor .num .num-content {
+    display: table-cell; /* parent must be display: table*/
+    vertical-align: middle;
+}
+
+#instructor .num span {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.badge.social {
+    background: #CCC;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 5px 20px 0;
+    padding: 0;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    color: #FFF;
+}
+.badge.social.facebook:hover {
+    background: #3b5998;
+}
+.badge.social.linkedin:hover {
+    background: #0077b5;
+}
+.badge.social.github:hover {
+    background: #333;
+}
+
+/** Kudos **/
+#kudos {
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 60px;
+}
+.testimonial img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+}
+blockquote {
+    padding: 0;
+    border: none;
+    font-style: italic;
+    text-align: left;
+}
+blockquote::before {
+    display: none;
+}
+cite {
+    display: block;
+    color: #777;
+    margin: 15px 0 0 0;
+}
+#signup {
+    text-align: center;
+    background: url(../img/signup.jpg) repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+    padding: 140px 0;
+    min-height: 500px;
+}
+#signup h2 {
+    font-weight: normal
+}
+#signup h2 strong {
+    border-bottom: solid 2px #dd5638;
+}
+#signup .btn {
+    font-size: 24px;
+}
+#signup a {
+    color: #FFF;
+}
+
+/** Footer **/
+footer {
+    background: #3e4249;
+    color: #FFF;
+    padding: 20px 0 10px;
+    font-size: 12px;
+}
+footer p {
+    margin: 0;
+}
+
+footer a:link, footer a:visited {
+    color: #FFF;
+}
+footer a:hover {
+    color: #dd5638;
+}
+
+footer li.signup-link a {
+    color: #dd5638;
+}
+footer li.signup-link a:hover {
+    font-weight: bold;
+}
+
+/** Blog **/
+
+.feature-image {
+    display: table;
+    width: 100%;
+}
+.feature-image-default {
+    background: url(../img/blog-head.jpg) repeat center center fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+.feature-image-default-alt {
+    background: url(../img/blog-head.jpg) repeat center center fixed;
+    background-size: cover;
+    min-height: 300px;
+}
+.feature-image h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #FFF;
+}
+#primary {
+    padding: 40px 0 40px;
+}
+.post, .widget, #comments {
+    position: relative;
+    border: 1px solid #DDD;
+    background: #FFF;
+    margin: 0 0 40px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.post header, .post .post-excerpt, .post .post-body, #comments .comments-wrap, #leave-comment {
+    padding: 20px;
+}
+.post header h1, .post header h3 {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom: 1px solid #DDD;
+}
+.post header h1 {
+    font-size: 24px;
+}
+.post-image {
+    height: auto;
+}
+.post-details {
+    font-size: 12px;
+    width: 90%;
+}
+.post-details i.fa {
+    padding-left: 10px; 
+}
+.post-details i.fa:first-child {
+    padding: 0;
+}
+.post-comments-badge {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 25px; right: 25px; border: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #79b044;
+    text-align: center;
+    display: table;
+}
+.post-comments-badge a {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 20px;
+    font-size: 20px;
+    color: #FFF;
+}
+.post-comments-badge i.fa {
+    display: block;
+    font-size: 15px;
+    padding: 0 !important;
+    margin-bottom: 4px;
+}
+.post-comments-badge:hover {
+    background-color: #8bc653;
+}
+
+/** Widgets **/
+
+.widget {
+    padding: 20px;
+}
+.widget h4 {
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #DDD;
+}
+.widget ul {
+    list-style: none;
+    margin: 0; padding: 0;
+}
+.widget ul li {
+    margin: 0 0 5px;
+}
+.widget ul li:hover {
+    position: relative;
+    left: 1px;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"], input[type="url"],
+input[type="password"], input[type="search"], textarea {
+    color: #666;
+    border: 1px solid #CCC;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/** Comments **/
+#comments h3 {
+    text-align: center;
+}
+#comments h4 {
+    font-size: 1.3em;
+}
+#comments ol {
+    list-style: none;
+    padding: 0; margin: 0;
+}
+#comments ol li {
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 20px;
+    margin: 10px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+#comments ol li ol.children {
+    padding: 0;
+    list-style: none;
+    font-size: 0.96em;
+}
+#leave-comment {
+    margin: 40px 0 0;
+    border-top: 1px solid #EEE;
+}
+
+/** Resources **/
+.resource {
+    width: 31.33333333%;
+    float: left;
+    margin: 0 3% 40px 0;
+}
+.resource:nth-child(3n) {
+    margin-right: 0;
+}
+section.main-content {
+    padding: 40px 0;
+}
+.resource a.btn {
+    color: #FFF;
+    font-weight: normal !important;
+}
+
+/** Media Query **/
+
+@media screen and ( max-width : 991px ) {
+    #instructor .container {
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+    }
+}
+
+@media screen and ( max-width : 768px ) {
+    .logo {
+        width: 50%;
+    }
+    #optin p {
+        margin: 0px 0 12px;
+        text-align: center
+    }
+    #course-features h4 {
+        margin: 15px 0 25px 0;
+    }
+    #featurette iframe {
+        height: 280px;
+    }
+    .testimonial img {
+        margin-bottom: 15px;
+    }
+    blockquote {
+        text-align: center;
+    }
+    .resource {
+        width: 48%;
+        margin-right: 2%;
+    }
+}
+@media screen and ( max-width : 568px ) {
+    #instructor .num {
+        height: 100px;
+        width: 100px;
+        font-size: 22px;
+    }
+    #instructor .num span {
+        font-size: 16px;
+    }
+    footer p {
+        margin: 0 0 5px;
+    }
+    .resource {
+        width: 100%;
+        margin-right: 0;
+    }
+}
